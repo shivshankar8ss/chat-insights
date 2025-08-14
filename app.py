@@ -6,6 +6,17 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 st.markdown("<h1 style='text-align: center; color: #3D5A80;'>📊 WhatsApp Chat Analyzer</h1>", unsafe_allow_html=True)
+
+with st.expander("📜 How to export your WhatsApp chat"):
+    st.markdown("""
+    1. Open WhatsApp and go to the chat you want to export.  
+    2. Tap the **three dots (⋮)** in the top-right corner.  
+    3. Select **More** → **Export chat**.  
+    4. Choose **Without Media** (recommended for faster analysis).  
+    5. Save the `.txt` file or send it to yourself via email.  
+
+    💡 **Tip:** The analyzer works best with unmodified `.txt` files generated directly by WhatsApp.
+    """)
 st.markdown("---")
 
 st.sidebar.title("📁 Upload Chat File")
